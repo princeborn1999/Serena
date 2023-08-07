@@ -11,6 +11,12 @@ function NavComponent() {
             <div>
                 <button>Template</button>
             </div>
+            <div>
+                <button>Timeline</button>
+            </div>
+            <div>
+                <button>API</button>
+            </div>
         </div>
     )
 }
