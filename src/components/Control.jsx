@@ -26,9 +26,11 @@ const marks = [
   
 function ControlComponent() {
     return(
+        //TODO alert"doesn't detect any arduino devices"
         <div className="p-5">
             <div label="degree-control m-5">
                 <h1>Adding degree</h1>
+                {/* TODO: connect with air conditioner */}
                 <Box sx={{ width: 300 }}>
                     <Slider
                         aria-label="Custom marks"
@@ -42,6 +44,7 @@ function ControlComponent() {
             </div>
             <div label="rain-control m-5">
                 <h1>Rainy?</h1>
+                {/* TODO: light rain, small rain, heavy rain */}
                 <Box sx={{ width: 300 }}>
                     <Slider
                         aria-label="Custom marks"
@@ -55,6 +58,7 @@ function ControlComponent() {
             </div>
             <div label="smell-control m-5">
                 <h1>What's it smells like?</h1>
+                {/* TODO: single-select wood, flower */}
                 <Box sx={{ width: 300 }}>
                     <Slider
                         aria-label="Custom marks"
@@ -69,6 +73,7 @@ function ControlComponent() {
             <div label="music-control m-5">
                 <h1>music</h1>
                 <Box sx={{ width: 300 }}>
+                    {/* TODO music control single-select: peaceful, fighter, town, poor, disaster*/}
                     <Slider
                         aria-label="Custom marks"
                         defaultValue={20}
