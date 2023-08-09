@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import DegreeControl  from './Degree-control/DegreeControl';
+import MusicControl from './Music-control/MusicControl';
 const marks = [
     {
       value: 0,
@@ -28,8 +29,15 @@ const marks = [
 function ControlComponent() {
     return(
         //TODO alert"doesn't detect any arduino devices"
-        <div className="p-5">
-            <DegreeControl />
+        <div className="p-5">   
+            <div className='flex'>
+                <div className='p-5'>
+                  <DegreeControl />
+                </div>
+                <div className='p-5'>
+                  <MusicControl />
+                </div>
+            </div>
             { false &&
                 <div>
                     <div label="rain-control m-5">
@@ -50,20 +58,6 @@ function ControlComponent() {
                         <h1>What's it smells like?</h1>
                         {/* TODO: single-select wood, flower */}
                         <Box sx={{ width: 300 }}>
-                            <Slider
-                                aria-label="Custom marks"
-                                defaultValue={20}
-                                getAriaValueText={valuetext}
-                                step={10}
-                                valueLabelDisplay="auto"
-                                marks={marks}
-                            />
-                        </Box>
-                    </div>
-                    <div label="music-control m-5">
-                        <h1>music</h1>
-                        <Box sx={{ width: 300 }}>
-                            {/* TODO music control single-select: peaceful, fighter, town, poor, disaster*/}
                             <Slider
                                 aria-label="Custom marks"
                                 defaultValue={20}

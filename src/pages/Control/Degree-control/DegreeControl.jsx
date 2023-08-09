@@ -23,19 +23,17 @@ const marks = [
   }
 function DegreeControl(){
     return(
-    <div label="degree-control m-5">
-        <h1>Adding degree</h1>
-        {/* TODO: connect with air conditioner */}
-        <Box sx={{ width: 300 }}>
-            <Slider
-                aria-label="Custom marks"
-                defaultValue={20}
-                getAriaValueText={valuetext}
-                step={10}
-                valueLabelDisplay="auto"
-                marks={marks}
-            />
-        </Box>
-    </div>)
+            <div className='shadow-xl p-5 bg-white rounded-lg w-96'>
+                <h1 className='font-bold'>DEGREE</h1>
+                <Slider
+                    aria-label="Custom marks"
+                    defaultValue={20}
+                    getAriaValueText={valuetext}
+                    step={10}
+                    valueLabelDisplay="auto"
+                    marks={marks}
+                />
+            </div>
+    )
 }
 export default DegreeControl

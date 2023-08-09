@@ -10,12 +10,14 @@ function App() {
     <div className="App">
       <HeaderComponent />
       <div className='flex h-screen'>
-       <NavComponent />
-       <Route exact path="/"><div>wait to come.</div></Route>
-       <Route path="/control"><ControlComponent /></Route>
-       <Route path="/template"><ControlComponent /></Route>
-       <Route path="/timeline"><ControlComponent /></Route>
-       <Route path="/api"><ControlComponent /></Route>
+        <NavComponent />
+        <div className='w-screen bg-gray-200'>
+          <Route exact path="/"><div>Wait to come.</div></Route>
+          <Route path="/control"><ControlComponent /></Route>
+          <Route path="/template"><ControlComponent /></Route>
+          <Route path="/timeline"><ControlComponent /></Route>
+          <Route path="/api"><ControlComponent /></Route>
+        </div>
       </div>
       <FooterComponent />
     </div>
