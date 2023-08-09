@@ -23,7 +23,7 @@ const marks = [
   }
 function DegreeControl(){
     return(
-            <div className='shadow-xl p-5 bg-white rounded-lg w-96'>
+            <div className='shadow-xl p-5 bg-white rounded-lg '>
                 <h1 className='font-bold'>DEGREE</h1>
                 <Slider
                     aria-label="Custom marks"
