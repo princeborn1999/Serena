@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import HeaderComponent from './components/Header';
 import NavComponent from './components/Nav';
-import ControlComponent from './components/Control/Control';
+import ControlComponent from './pages/Control/Control';
 import FooterComponent from './components/Footer';
 import { Link, Route, Switch } from "react-router-dom";
 function App() {
