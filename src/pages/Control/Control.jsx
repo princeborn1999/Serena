@@ -28,6 +28,7 @@ function ControlComponent() {
     return(
         //TODO alert"doesn't detect any arduino devices"
         <div className="p-5">   
+            <p>In this page, you can try to control degree, music,.</p>
             <div className='flex'>
                 <div className='p-5 w-1/4'>
                   <DegreeControl />

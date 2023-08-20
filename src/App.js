@@ -4,6 +4,7 @@ import HeaderComponent from './components/Header';
 import NavComponent from './components/Nav';
 import ControlComponent from './pages/Control/Control';
 import FooterComponent from './components/Footer';
+import { GameComponent } from './pages/Game';
 import { Link, Route, Switch } from "react-router-dom";
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/control"><ControlComponent /></Route>
           <Route path="/template"><ControlComponent /></Route>
           <Route path="/timeline"><ControlComponent /></Route>
+          <Route path="/game"><GameComponent /></Route>
           <Route path="/api"><ControlComponent /></Route>
         </div>
       </div>

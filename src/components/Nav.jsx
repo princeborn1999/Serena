@@ -18,6 +18,12 @@ function NavComponent() {
                 <button><Link to="/timeline">Timeline</Link></button>
             </div>
             <div>
+                <button><Link to="/game">Game</Link></button>
+            </div>
+            <div>
+                <button><Link to="/ai">AI</Link></button>
+            </div>
+            <div>
                 <button><Link to="/api">API</Link></button>
             </div>
         </div>
