@@ -5,8 +5,8 @@ export function GameComponent(){
     return(
         <div>
             <h1>This page is game demonstration</h1>
-                
+            <Canvas />
         </div>
     )
 }
-default export GameComponent
+export default GameComponent
