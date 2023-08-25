@@ -6,6 +6,7 @@ import ControlComponent from './pages/Control/Control';
 import FooterComponent from './components/Footer';
 import IntroComponent from './pages/Intro';
 import { GameComponent } from './pages/Game';
+import TempComponent from './pages/Temp';
 import { Link, Route, Switch } from "react-router-dom";
 function App() {
   return (
@@ -16,8 +17,7 @@ function App() {
         <div className='w-screen'>
           <Route exact path="/"><IntroComponent /></Route>
           <Route path="/control"><ControlComponent /></Route>
-          <Route path="/template"><ControlComponent /></Route>
-          <Route path="/timeline"><ControlComponent /></Route>
+          <Route path="/template"><TempComponent /></Route>
           <Route path="/game"><GameComponent /></Route>
           <Route path="/api"><ControlComponent /></Route>
         </div>

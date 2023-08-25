@@ -23,8 +23,13 @@ const marks = [
   }
 function DegreeControl(){
     return(
-            <div className='shadow-xl p-5 bg-white rounded-lg '>
+            <div>
                 <h1 className='font-bold'>DEGREE</h1>
+                <p>please 連接冷氣機</p>
+                <p>請自備arduino IRremote receiver, IRremote transmit</p>
+                <p>秀圖</p>
+                ex為例 以冷氣的圖為例
+                
                 <Slider
                     aria-label="Custom marks"
                     defaultValue={20}

@@ -20,9 +20,6 @@ function NavComponent() {
                 <button><Link to="/template">Template</Link></button>
             </div>
             <div>
-                <button><Link to="/timeline">Timeline</Link></button>
-            </div>
-            <div>
                 <button><Link to="/game">Game</Link></button>
             </div>
             <div>

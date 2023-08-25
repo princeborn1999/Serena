@@ -5,7 +5,13 @@ export function GameComponent(){
     return(
         <div>
             <h1>This page is game demonstration</h1>
-            <Canvas />
+            <Canvas>
+                <pointLight position={[10, 10, 10]} />
+                <mesh>
+                <sphereGeometry />
+                <meshStandardMaterial color="hotpink" />
+                </mesh>
+            </Canvas>
         </div>
     )
 }

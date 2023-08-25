@@ -1,6 +1,8 @@
 import * as React from 'react';
 import DegreeControl  from './Degree-control/DegreeControl';
 import MusicControl from './Music-control/MusicControl';
+import RainControl from './Rain-control/RainControl';
+import SmellControl from './Smell-control/SmellControl';
 const marks = [
     {
       value: 0,
@@ -27,21 +29,18 @@ const marks = [
 function ControlComponent() {
     return(
         //TODO alert"doesn't detect any arduino devices"
-        <div className="p-5">   
-            <p>In this page, you can try to control degree, music,.</p>
-            <div className='flex'>
-                <div className='p-5 w-1/4'>
-                  <DegreeControl />
-                </div>
-                <div className='p-5 w-1/4'>
-                  <MusicControl />
-                </div>
-                <div className='p-5 w-1/4'>
-                    RainControl
-                </div>
-                <div className='p-5 w-1/4'>
-                    SmellControl
-                </div>
+        <div className='py-5 px-10'>   
+            <div className=''>
+              <DegreeControl />
+            </div>
+            <div className=''>
+              <MusicControl />
+            </div>
+            <div className=''>
+              <RainControl />
+            </div>
+            <div className=''>
+              <SmellControl />
             </div>
         </div>
     )
