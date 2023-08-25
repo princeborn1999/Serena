@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import HeaderComponent from './components/Header';
 import NavComponent from './components/Nav';
@@ -7,7 +6,7 @@ import FooterComponent from './components/Footer';
 import IntroComponent from './pages/Intro';
 import { GameComponent } from './pages/Game';
 import TempComponent from './pages/Temp';
-import { Link, Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
@@ -18,7 +17,7 @@ function App() {
           <Route exact path="/"><IntroComponent /></Route>
           <Route path="/control"><ControlComponent /></Route>
           <Route path="/template"><TempComponent /></Route>
-          <Route path="/game"><GameComponent /></Route>
+          {/* <Route path="/game"><GameComponent /></Route> */}
           <Route path="/api"><ControlComponent /></Route>
         </div>
       </div>
