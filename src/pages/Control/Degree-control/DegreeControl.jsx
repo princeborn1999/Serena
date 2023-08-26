@@ -28,7 +28,9 @@ function DegreeControl(){
                 <p>please 連接冷氣機</p>
                 <p>請自備arduino IRremote receiver, IRremote transmit</p>
                 <p>秀圖</p>
+                <div className='w-64 h-32 bg-gray-200'></div>
                 ex為例 以冷氣的圖為例
+                最後要demo影片
                 
                 <Slider
                     aria-label="Custom marks"
