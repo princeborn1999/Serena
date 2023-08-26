@@ -1,27 +1,43 @@
 import './Nav.css'
 import { Link } from "react-router-dom";
-import { useState } from 'react';
+import React,{ useState } from 'react';
+
 function NavComponent() {
-    const [active,setActive] = useState('')
+    const [active,setActive] = useState('intro');
+    let btnClass = 'bg-blue-400 rounded text-white';
+    function changeActive(navName) {
+        setActive(navName)
+    }
+    function setClass(navName){
+        if(navName === active) return btnClass
+        return null
+    }
     return(
         <div className="m-5 nav-btn w-40">
             <div label="title">
                 <p className='text-lg font-bold'>GET STARTED</p>
             </div>
-            <div className='bg-teal-100 rounded'>
-                <button>
-                    <Link to="/">Introduction</Link>
-                </button>
-            </div>
-            <div>
-                <button><Link to="/control">Control</Link></button>
-            </div>
-            <div>
-                <button><Link to="/template">Template</Link></button>
-            </div>
-            <div>
-                <button><Link to="/api">API</Link></button>
-            </div>
+            <Link to="/">
+                <div className={`${setClass('intro')} p-2`}
+                    onClick={() => changeActive('intro')} >
+                    Introduction
+                </div>
+            </Link>
+            <Link to="/control">
+                <div className={`${setClass('control')} p-2`} onClick={() => changeActive('control')} >
+                    Control
+                </div>
+            </Link>
+            <Link to="/template">
+                <div className={`${setClass('temp')} p-2`}  onClick={() => changeActive('temp')}>
+                    Template
+                </div>
+            </Link>
+            <Link to="/api">
+                <div className={`${setClass('api')} p-2`} onClick={() => changeActive('api')}>
+                    API
+                </div>
+            </Link>
         </div>
     )
 }

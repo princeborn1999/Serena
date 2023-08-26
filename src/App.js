@@ -6,6 +6,7 @@ import FooterComponent from './components/Footer';
 import IntroComponent from './pages/Intro';
 import { GameComponent } from './pages/Game';
 import TempComponent from './pages/Temp';
+import ApiComponent from './pages/Api';
 import { Route } from "react-router-dom";
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/control"><ControlComponent /></Route>
           <Route path="/template"><TempComponent /></Route>
           {/* <Route path="/game"><GameComponent /></Route> */}
-          <Route path="/api"><ControlComponent /></Route>
+          <Route path="/api"><ApiComponent /></Route>
         </div>
       </div>
       <FooterComponent />
