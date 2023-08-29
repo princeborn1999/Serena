@@ -9,6 +9,7 @@ import TempComponent from './pages/Temp';
 import ApiComponent from './pages/Api';
 import { Route } from "react-router-dom";
 function App() {
+  //TODO直接先預設跳出一個modal 表示廣告
   return (
     <div className="App">
       <HeaderComponent />

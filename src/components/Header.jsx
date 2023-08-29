@@ -22,7 +22,7 @@ function HeaderComponent() {
 
     return(
         <div className="relative">
-            <div className="fixed sticky top-0 left-0 right-0 p-2 shadow-sm bg-blue-400">
+            <div className="fixed sticky top-0 left-0 right-0 p-2 shadow-sm bg-arduinoReact">
                 <header className="flex">
                     <div className="flex pl-5 ">
                         <h1 className="text-white font-bold text-3xl 

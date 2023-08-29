@@ -4,7 +4,7 @@ import React,{ useState } from 'react';
 
 function NavComponent() {
     const [active,setActive] = useState('intro');
-    let btnClass = 'bg-blue-400 rounded text-white';
+    let btnClass = 'bg-arduinoReact rounded text-white font-semibold';
     function changeActive(navName) {
         setActive(navName)
     }

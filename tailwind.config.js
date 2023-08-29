@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        arduinoReact: '#4dc0c8',
+        codeBg: '#252b37'
+      },
+    },
   },
   plugins: [],
 }
