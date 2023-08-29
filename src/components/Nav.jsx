@@ -33,11 +33,9 @@ function NavComponent() {
                     Template
                 </div>
             </Link>
-            <Link to="/api">
-                <div className={`${setClass('api')} p-2`} onClick={() => changeActive('api')}>
-                    API
-                </div>
-            </Link>
+            <div className='text-gray-400 p-2' onClick={() => changeActive('api')}>
+                {'Api(Pending)'}
+            </div>
         </div>
     )
 }
