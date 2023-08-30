@@ -4,7 +4,11 @@ function MusicControl(){
     const [play] = useSound(angelical);
     return(
             <div>
-                <h1 className='font-bold'>MUSIC TYPE</h1>
+                <h1 className='font-semibold text-xl'>Music control</h1>
+                <div className="flex text-green-500">
+                    <div className=' bg-green-400 rounded-full w-3 h-3'></div>
+                    <p>Connected</p>
+                </div>
                 <p>選擇音樂</p>
                 <p>以音樂去聽覺 享受</p>
                 <p> 室內? 室外 如何與溫度去搭配?</p>
