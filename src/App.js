@@ -5,7 +5,7 @@ import ControlComponent from './pages/Control/Control';
 import FooterComponent from './components/Footer';
 import IntroComponent from './pages/Intro';
 import { GameComponent } from './pages/Game';
-import TempComponent from './pages/Temp';
+import ApplicationComponent from './pages/Application';
 import ApiComponent from './pages/Api';
 import { Route } from "react-router-dom";
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <div className='w-screen'>
           <Route exact path="/"><IntroComponent /></Route>
           <Route path="/control"><ControlComponent /></Route>
-          <Route path="/template"><TempComponent /></Route>
+          <Route path="/application"><ApplicationComponent /></Route>
           {/* <Route path="/game"><GameComponent /></Route> */}
           <Route path="/api"><ApiComponent /></Route>
         </div>

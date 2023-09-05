@@ -24,13 +24,14 @@ function IntroComponent() {
           <h1 className="font-bold text-lg text-center">How to use it?</h1>
           <div className="w-full flex justify-center p-2">
             <div className="bg-codeBg p-5 w-96 rounded-lg">
-              <code className="text-white">npm install zono</code>
+              <code className="text-white">npm install reduino</code>
             </div>
             {/* TODO: 介紹怎麼用?
                             arduino?
                             這個網站為例
                             如果只有用api前置作業要哪裡
                         */}
+            {/* Pre environment -> Node? */}
           </div>
         </section>
 
@@ -57,7 +58,7 @@ function IntroComponent() {
           <a href="https://github.com/princeborn1999">AaronPrince</a>
         </section>
       </div>
-      <div className="justify-center w-1/5 flex py-10">
+      <div className="justify-center w-1/6 flex py-10">
         <div>
           <h1 className="p-2 font-semibold text-lg">On this page</h1>
           <div className="p-2">

@@ -16,9 +16,9 @@ function NavComponent() {
         return null
     }
     return(
-        <div className="m-5 nav-btn w-40">
+        <div className="m-5 nav-btn w-46">
             <div label="title">
-                <p className='text-lg font-bold'>GET STARTED</p>
+                <p className='text-lg font-semibold'>GET STARTED</p>
             </div>
             <Link to="/">
                 <div className={`${setClass('intro')} p-2`}
@@ -32,13 +32,13 @@ function NavComponent() {
                     <FcElectronics />Controller
                 </div>
             </Link>
-            <Link to="/template">
+            <Link to="/application">
                 <div className={`${setClass('temp')} p-2`}  onClick={() => changeActive('temp')}>
-                    <FcPuzzle />Template
+                    <FcPuzzle />Application
                 </div>
             </Link>
             <div className='text-gray-400 p-2' onClick={() => changeActive('api')}>
-                {'Api(Pending)'}
+                {'Api(Uncompleted)'}
             </div>
         </div>
     )
