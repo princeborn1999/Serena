@@ -1,31 +1,30 @@
-import * as React from 'react';
-import DegreeControl  from './Degree-control/DegreeControl';
-import MusicControl from './Music-control/MusicControl';
-import RainControl from './Rain-control/RainControl';
-import SmellControl from './Smell-control/SmellControl';
+import * as React from "react";
+import DegreeControl from "./Degree-control/DegreeControl";
+import RainControl from "./Rain-control/RainControl";
+import SmellControl from "./Smell-control/SmellControl";
 const marks = [
-    {
-      value: 0,
-      label: '0°C',
-    },
-    {
-      value: 20,
-      label: '20°C',
-    },
-    {
-      value: 37,
-      label: '37°C',
-    },
-    {
-      value: 100,
-      label: '100°C',
-    },
-  ];
+  {
+    value: 0,
+    label: "0°C",
+  },
+  {
+    value: 20,
+    label: "20°C",
+  },
+  {
+    value: 37,
+    label: "37°C",
+  },
+  {
+    value: 100,
+    label: "100°C",
+  },
+];
 
-  function valuetext(value) {
-    return `${value}°C`;
-  }
-  
+function valuetext(value) {
+  return `${value}°C`;
+}
+
 function ControlComponent() {
     return(
         //TODO alert"doesn't detect any arduino devices"
@@ -39,10 +38,10 @@ function ControlComponent() {
                 <RainControl />
               </div>
               <div className='bg-white shadow-sm p-5 w-2/6'>
-                <MusicControl />
+                <SmellControl />
               </div>
             </div>
         </div>
     )
 }
-export default ControlComponent
+export default ControlComponent;
