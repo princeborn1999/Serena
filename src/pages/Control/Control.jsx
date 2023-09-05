@@ -2,42 +2,39 @@ import * as React from "react";
 import DegreeControl from "./Degree-control/DegreeControl";
 import RainControl from "./Rain-control/RainControl";
 import SmellControl from "./Smell-control/SmellControl";
-const marks = [
-  {
-    value: 0,
-    label: "0°C",
-  },
-  {
-    value: 20,
-    label: "20°C",
-  },
-  {
-    value: 37,
-    label: "37°C",
-  },
-  {
-    value: 100,
-    label: "100°C",
-  },
-];
-
-function valuetext(value) {
-  return `${value}°C`;
-}
+import Uno from '../../assets/image/uno.png';
+import Leonardo from '../../assets/image/leonardo.png';
+import { ConnectLight } from "../../components/Unitlight";
 
 function ControlComponent() {
     return(
         //TODO alert"doesn't detect any arduino devices"
-        <div className='py-5 px-10 bg-slate-100'>   
+        <div className='py-5 px-10 bg-slate-200 min-h-screen'>   
             <h1 className='text-2xl font-semibold'>Devices</h1>
             <div className='flex'>
-              <div className='bg-white shadow-sm p-5 w-2/6'>
+              <div className='bg-white rounded shadow-sm p-2 m-2 w-1/6'>
+                <div>
+                  <p>Uno</p>
+                  <ConnectLight />
+                </div>
+                <img src={Uno} alt="uno" />
+              </div>
+              <div className='bg-white rounded shadow-sm p-2 m-2 w-1/6'>
+                <div>
+                  <p>Leonardo</p>
+                  <ConnectLight />
+                </div>
+                <img src={Leonardo} alt="leonardo" />
+              </div>
+            </div>
+            <div className='flex'>
+              <div className='bg-white rounded shadow-sm p-2 m-2 w-2/6'>
                 <DegreeControl />
               </div>
-              <div className='bg-white shadow-sm p-5 w-2/6'>
+              <div className='bg-white rounded shadow-sm p-2 m-2 w-2/6'>
                 <RainControl />
               </div>
-              <div className='bg-white shadow-sm p-5 w-2/6'>
+              <div className='bg-white rounded shadow-sm p-2 m-2 w-2/6'>
                 <SmellControl />
               </div>
             </div>

@@ -3,7 +3,7 @@ import { ConnectLight, DisconnectLight, PendingLight } from '../../../components
 
 function DegreeControl(){
     return(
-            <div>
+            <div className='m-5'>
                 <h1 className='font-semibold text-xl'>Temperature control</h1>
                 <ConnectLight />
                 {/* 改成Unit 跟 Template */}

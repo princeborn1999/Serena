@@ -1,6 +1,9 @@
 import './Nav.css'
 import { Link } from "react-router-dom";
 import React,{ useState } from 'react';
+import { FcCommandLine } from "react-icons/fc";
+import { FcElectronics } from "react-icons/fc";
+import { FcPuzzle } from "react-icons/fc";
 
 function NavComponent() {
     const [active,setActive] = useState('intro');
@@ -20,17 +23,18 @@ function NavComponent() {
             <Link to="/">
                 <div className={`${setClass('intro')} p-2`}
                     onClick={() => changeActive('intro')} >
-                    Introduction
+                    <FcCommandLine />
+                   <p>Introduction</p>
                 </div>
             </Link>
             <Link to="/control">
                 <div className={`${setClass('control')} p-2`} onClick={() => changeActive('control')} >
-                    Controller
+                    <FcElectronics />Controller
                 </div>
             </Link>
             <Link to="/template">
                 <div className={`${setClass('temp')} p-2`}  onClick={() => changeActive('temp')}>
-                    Template
+                    <FcPuzzle />Template
                 </div>
             </Link>
             <div className='text-gray-400 p-2' onClick={() => changeActive('api')}>
