@@ -4,7 +4,7 @@ import React,{ useState } from 'react';
 
 function NavComponent() {
     const [active,setActive] = useState('intro');
-    let btnClass = 'bg-arduinoReact rounded text-white font-semibold';
+    let btnClass = 'bg-gray-800 rounded text-white font-semibold';
     function changeActive(navName) {
         setActive(navName)
     }
@@ -25,7 +25,7 @@ function NavComponent() {
             </Link>
             <Link to="/control">
                 <div className={`${setClass('control')} p-2`} onClick={() => changeActive('control')} >
-                    Control
+                    Controller
                 </div>
             </Link>
             <Link to="/template">

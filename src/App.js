@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <HeaderComponent />
-      <div className='flex h-screen divide-x divide-slate-300'>
+      <div className='flex divide-x divide-slate-300'>
         <NavComponent />
         <div className='w-screen'>
           <Route exact path="/"><IntroComponent /></Route>
