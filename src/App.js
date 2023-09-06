@@ -4,7 +4,6 @@ import NavComponent from './components/Nav';
 import ControlComponent from './pages/Control/Control';
 import FooterComponent from './components/Footer';
 import IntroComponent from './pages/Intro';
-import { GameComponent } from './pages/Game';
 import ApplicationComponent from './pages/Application';
 import ApiComponent from './pages/Api';
 import { Route } from "react-router-dom";
@@ -19,7 +18,6 @@ function App() {
           <Route exact path="/"><IntroComponent /></Route>
           <Route path="/control"><ControlComponent /></Route>
           <Route path="/application"><ApplicationComponent /></Route>
-          {/* <Route path="/game"><GameComponent /></Route> */}
           <Route path="/api"><ApiComponent /></Route>
         </div>
       </div>
