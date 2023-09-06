@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        '128': '32rem',
+      },
       colors: {
         arduinoReact: '#4dc0c8',
         codeBg: '#252b37'
