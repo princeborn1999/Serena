@@ -1,15 +1,19 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import React from "react";
-import ReactDOM from "react-dom";
-// import  SignInModal from './SignInModal'
+import SignInModalComponent from "./SignInModal";
 function HeaderComponent() {
   const [modalState, setModalState] = useState(false);
   const customStyles = {
+    overlay: {
+      backgroundColor: 'rgba(44, 76, 96, 0.75)',
+    },
     content: {
-      width: "50%",
-      maxHeight: "80vh",
+      width: "40%",
+      maxHeight: "60vh",
       margin: "auto",
+      padding: '0',
+      border: 'none'
     },
   };
   const openModal = () => {
@@ -42,26 +46,31 @@ function HeaderComponent() {
             onRequestClose={closeModal}
             style={customStyles}
           >
-            <div className="flex justify-center">
-              <div>
-                <div className="m-1">
-                  <label htmlFor="account">Account</label>
-                  <input type="text" />
-                </div>
-                <div className="m-1">
-                  <label htmlFor="password">Password</label>
-                  <input type="text" />
-                </div>
-                <div className="p-5">
-                  <button className="m-1" onClick={closeModal}>
-                    Login
-                  </button>
-                  <button className="m-1" onClick={closeModal}>
-                    Sign up
-                  </button>
-                  <button className="m-1" onClick={closeModal}>
-                    Cancel
-                  </button>
+            <div className="flex h-full">
+              <div className="w-2/5 bg-arduinoReact min-h-full">
+                {/* 這邊要放手繪Arduino React */}
+              </div>
+              <div className="flex h-full">
+                <div className="">
+                  <div className="m-1">
+                    <label htmlFor="account">Account</label>
+                    <input className="border pl-2" type="text" />
+                  </div>
+                  <div className="m-1">
+                    <label htmlFor="password">Password</label>
+                    <input className="border pl-2" type="text" />
+                  </div>
+                  <div className="p-5">
+                    <button className="m-1" onClick={closeModal}>
+                      Login
+                    </button>
+                    <button className="m-1" onClick={closeModal}>
+                      Sign up
+                    </button>
+                    <button className="m-1" onClick={closeModal}>
+                      Cancel
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -12,14 +12,14 @@ function ControlComponent() {
         <div className='py-5 px-10 bg-slate-200 min-h-screen'>   
             <h1 className='text-2xl font-semibold'>Devices</h1>
             <div className='flex'>
-              <div className='bg-white rounded shadow-sm p-2 m-2 w-1/6'>
+              <div className='bg-white rounded shadow-sm p-2 m-2 w-1/6 hover:scale-110'>
                 <div>
                   <p>Uno</p>
                   <ConnectLight />
                 </div>
                 <img src={Uno} alt="uno" />
               </div>
-              <div className='bg-white rounded shadow-sm p-2 m-2 w-1/6'>
+              <div className='bg-white rounded shadow-sm p-2 m-2 w-1/6 hover:scale-110'>
                 <div>
                   <p>Leonardo</p>
                   <ConnectLight />
