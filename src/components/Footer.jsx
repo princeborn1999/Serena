@@ -8,7 +8,7 @@ function FooterComponent() {
           className="font-bold text-2xl text-arduinoReact 
                            drop-shadow-2xl shadow-blue-500/50"
         >
-          REDUINO
+          ZONO
         </p>
         <p className="pl-5">©All copyright reserved by AaronPrince.</p>
       </div>

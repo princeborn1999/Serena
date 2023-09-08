@@ -33,7 +33,7 @@ function HeaderComponent() {
               className="text-white font-bold text-3xl 
                                        drop-shadow-2xl shadow-white-400/50"
             >
-              REDUINO
+              ZONO
             </h1>
           </div>
           <div className="flex w-full justify-end pr-5">

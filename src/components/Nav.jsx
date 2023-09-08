@@ -4,7 +4,7 @@ import React,{ useState } from 'react';
 import { FcCommandLine } from "react-icons/fc";
 import { FcElectronics } from "react-icons/fc";
 import { FcPuzzle } from "react-icons/fc";
-
+import { FcReading } from "react-icons/fc";
 function NavComponent() {
     const [active,setActive] = useState('intro');
     let btnClass = 'bg-gray-800 rounded text-white font-semibold';
@@ -35,6 +35,11 @@ function NavComponent() {
             <Link to="/application">
                 <div className={`${setClass('temp')} p-2`}  onClick={() => changeActive('temp')}>
                     <FcPuzzle />Application
+                </div>
+            </Link>
+            <Link to="/reference">
+                <div className={`${setClass('reference')} p-2`}  onClick={() => changeActive('reference')}>
+                    <FcReading />Reference
                 </div>
             </Link>
             <div className='text-gray-400 p-2' onClick={() => changeActive('api')}>
