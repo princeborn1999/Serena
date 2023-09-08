@@ -24,7 +24,7 @@ function IntroComponent() {
           <h1 className="font-bold text-lg text-center">How to use it?</h1>
           <div className="w-full flex justify-center p-2">
             <div className="bg-codeBg p-5 w-96 rounded-lg">
-              <code className="text-white">npm install reduino</code>
+              <code className="text-white">npm install zono</code>
             </div>
             {/* TODO: 介紹怎麼用?
                             arduino?
