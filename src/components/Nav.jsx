@@ -37,9 +37,9 @@ function NavComponent() {
                     <FcPuzzle />Application
                 </div>
             </Link>
-            <Link to="/reference">
-                <div className={`${setClass('reference')} p-2`}  onClick={() => changeActive('reference')}>
-                    <FcReading />Reference
+            <Link to="/articles">
+                <div className={`${setClass('articles')} p-2`}  onClick={() => changeActive('articles')}>
+                    <FcReading />Articles
                 </div>
             </Link>
             <div className='text-gray-400 p-2' onClick={() => changeActive('api')}>

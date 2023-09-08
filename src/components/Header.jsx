@@ -38,7 +38,7 @@ function HeaderComponent() {
           </div>
           <div className="flex w-full justify-end pr-5">
             <button className="text-white font-semibold" onClick={openModal}>
-              sign in
+              SIGN IN
             </button>
           </div>
           <Modal

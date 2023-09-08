@@ -62,8 +62,7 @@ function ControlComponent() {
                 <SmellControl />
                 {/* TalkControl -> 語音辨識*/}
               </div>
-              <div className='bg-white rounded shadow-sm p-2 m-2 w-2/6'>
-                <DegreeControl />
+              <div className='rounded p-2 m-2 w-2/6'>
               </div>
             </div>
         </div>

@@ -6,6 +6,7 @@ import FooterComponent from './components/Footer';
 import IntroComponent from './pages/Intro';
 import ApplicationComponent from './pages/Application';
 import ApiComponent from './pages/Api';
+import ArticlesComponent from './pages/Articles';
 import { Route } from "react-router-dom";
 function App() {
   //TODO直接先預設跳出一個modal 表示廣告
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/"><IntroComponent /></Route>
           <Route path="/control"><ControlComponent /></Route>
           <Route path="/application"><ApplicationComponent /></Route>
+          <Route path="/articles"><ArticlesComponent /></Route>
           <Route path="/api"><ApiComponent /></Route>
         </div>
       </div>
