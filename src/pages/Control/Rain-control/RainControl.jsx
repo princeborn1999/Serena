@@ -4,24 +4,19 @@ import {
   PendingLight,
 } from "../../../components/Unitlight";
 import { useState, useEffect } from "react";
-import { socket } from "../../../socket";
+// import { socket } from "../../../socket";
+import io from "socket.io-client";
+const socket = io.connect("http://localhost:3001");
 
 export function RainControl() {
+  const turnRain = () => {
+    socket.emit("send_message", { message: "hello" });
+  };
   useEffect(() => {
-    socket.on("connect", () => {
-      console.log("Connected to the server");
+    socket.on("receive_message", (data) => {
+      alert(data.message);
     });
-    socket.on("eventName", (data) => {
-      console.log("Received event from server:", data);
-    });
-    return () => {
-      socket.disconnect();
-    };
-  }, []);
-  function enableRain() {
-    console.log("enableRain ...");
-    socket.emit("asd", { text: "Some data from the client", count: 1 });
-  }
+  }, [socket]);
   return (
     <div className="m-5">
       <h1 className="font-semibold text-xl">Rain control</h1>
@@ -40,7 +35,7 @@ export function RainControl() {
         Click to enable Rain
       </label>
       {/*TODO:  請先穿戴好雨衣雨具 */}
-      <button onClick={() => enableRain()} className="p-2">
+      <button onClick={() => turnRain()} className="p-2">
         Connect
       </button>
     </div>
