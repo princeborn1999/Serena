@@ -1,9 +1,15 @@
 import Contributors from "./Contributors";
+import Reduino from "../../src/assets/image/reduino.jpg"
+import Zombie1 from "../../src/assets/image/zombie_01.jpg"
+import Zombie2 from "../../src/assets/image/zombie_02.jpg"
 function IntroComponent() {
   return (
     <div className="flex justify-center">
       <div className="px-40 py-10 w-4/5">
         <section id="intro">
+          <div className="w-1/2 flex justify-center">
+            <img src={Reduino} alt="reduinoBanner" />
+          </div>
           <h1 className="font-bold text-lg">Introduction</h1>
           <div className="p-2">
             <p>
@@ -59,6 +65,13 @@ function IntroComponent() {
               there's an opportunity to enhance it further by engaging more
               senses and environmental cues.
             </p>
+            <div className="w-1/2 flex justify-center">
+              <img src={Zombie1} alt="zombie1" />
+            </div>
+            <div className="w-1/2 flex justify-center">
+              <img src={Zombie2} alt="zombie2" />
+            </div>
+            <span className="text-gray-500">gamescene src:https://store.steampowered.com/app/676840/Contagion_VR_Outbreak/</span>
           </div>
         </section>
 

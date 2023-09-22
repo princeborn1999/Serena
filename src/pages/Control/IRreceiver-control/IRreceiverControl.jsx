@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ConnectLight, DisconnectLight, PendingLight } from '../../../components/Unitlight';
-
+import IRrecvImage from '../../../assets/image/IRreceiver.jpg'
 function IRreceiverControl(){
     return(
             <div className='m-5'>
@@ -11,7 +11,7 @@ function IRreceiverControl(){
                 {/* TODO  動畫請連接裝置IR receiver, IR send */}
                 <p>please 連接冷氣機</p>
                 <p>請自備arduino IRremote receiver, IRremote transmit</p>
-                <p>秀圖</p>
+                <img src={IRrecvImage} alt="IRreceiver" />
                 <div className='w-64 h-32 bg-gray-200'></div>
                 ex為例 以冷氣的圖為例
                 最後要demo影片

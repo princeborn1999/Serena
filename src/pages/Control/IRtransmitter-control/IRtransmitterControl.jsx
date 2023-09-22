@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ConnectLight, DisconnectLight, PendingLight } from '../../../components/Unitlight';
+import IRtranImage from '../../../assets/image/IRtransmitter.jpg'
 
 function IRtransmitterontrol(){
     return(
@@ -13,10 +14,9 @@ function IRtransmitterontrol(){
 
                 {/* 目前支援sendRaw */}
 
-
                 <p>please 連接冷氣機</p>
                 <p>請自備arduino IRremote receiver, IRremote transmit</p>
-                <p>秀圖</p>
+                <img src={IRtranImage} alt="IRreceiver" />
                 <div className='w-64 h-32 bg-gray-200'></div>
                 ex為例 以冷氣的圖為例
                 最後要demo影片
