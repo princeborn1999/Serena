@@ -6,7 +6,7 @@ import {
 import { useState, useEffect } from "react";
 import { socket } from "../../../socket";
 
-export function RainControl() {
+export function MG996RControl() {
   useEffect(() => {
     socket.on("connect", () => {
       console.log("Connected to the server");
@@ -24,8 +24,9 @@ export function RainControl() {
   }
   return (
     <div className="m-5">
-      <h1 className="font-semibold text-xl">Rain control</h1>
+      <h1 className="font-semibold text-xl">MG996R module</h1>
       <DisconnectLight />
+      {/* https://www.amazon.com/Gikfun-Digital-Receiver-Transmitter-Arduino/dp/B0816P2545 */}
       <div>
         <p>component: MG996R</p>
       </div>
@@ -46,4 +47,4 @@ export function RainControl() {
     </div>
   );
 }
-export default RainControl;
+export default MG996RControl;

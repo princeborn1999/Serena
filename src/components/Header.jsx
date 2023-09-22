@@ -26,20 +26,22 @@ function HeaderComponent() {
 
   return (
     <div className="relative">
-      <div className="fixed sticky top-0 left-0 right-0 p-2 shadow-sm bg-arduinoReact">
+      <div className="fixed sticky top-0 left-0 right-0 p-2 shadow-sm 
+                      bg-gradient-to-r from-arduinoReact to-blue-400">
         <header className="flex">
           <div className="flex pl-5 ">
             <h1
               className="text-white font-bold text-3xl 
-                                       drop-shadow-2xl shadow-white-400/50"
+                           drop-shadow-2xl shadow-white-400/50
+                           pl-16"
             >
-              ZONO
+              REDUINO
             </h1>
           </div>
           <div className="flex w-full justify-end pr-5">
-            <button className="text-white font-semibold" onClick={openModal}>
+            {/* <button className="text-white font-semibold" onClick={openModal}>
               SIGN IN
-            </button>
+            </button> */}
           </div>
           <Modal
             isOpen={modalState}

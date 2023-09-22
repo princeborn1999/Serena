@@ -1,7 +1,7 @@
 import * as React from "react";
-import DegreeControl from "./Degree-control/DegreeControl";
-import RainControl from "./Rain-control/RainControl";
-import SmellControl from "./Smell-control/SmellControl";
+import IRreceiverControl from "./IRreceiver-control/IRreceiverControl";
+import IRtransmitterControl from "./IRtransmitter-control/IRtransmitterControl";
+import MG996RControl from "./MG996R-control/MG996RControl";
 import Uno from "../../assets/image/uno.png";
 import Leonardo from "../../assets/image/leonardo.png";
 import Mega from "../../assets/image/mega.png";
@@ -43,27 +43,17 @@ function ControlComponent() {
           <img src={Mega} alt="mega" />
         </div>
       </div>
+      <h1 className="text-2xl font-semibold">Modules</h1>
       <div className="flex">
         <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
-          <RainControl />
+          <IRreceiverControl />
         </div>
         <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
-          <SmellControl />
+          <IRtransmitterControl />
         </div>
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
-          <DegreeControl />
-        </div>
-      </div>
-      <div className="flex">
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
-          <RainControl />
-          {/*FingerprintControl */}
-        </div>
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
-          <SmellControl />
-          {/* TalkControl -> 語音辨識*/}
-        </div>
-        <div className="rounded p-2 m-2 w-2/6"></div>
+        {/* <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
+          <MG996RControl />
+        </div> */}
       </div>
     </div>
   );

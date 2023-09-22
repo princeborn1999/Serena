@@ -4,10 +4,10 @@ import GameComponent from './Game/Game'
 
 function ApplicationComponent() {
     return(
-        <div className="bg-slate-200 min-h-screen min-w-full p-5">
+        <div className="bg-slate-200 min-h-screen min-w-full">
             {/* R3F的畫面 */}
-            <div className="flex justify-center py-5 h-full">
-                <div className="border-solid border-2 border-black rounded-lg w-4/5 h-96">
+            <div className="flex justify-center h-full">
+                <div className="">
                     <GameComponent />
                 </div>
                 {/* <div className=" bg-gray-900 rounded-lg w-4/5 h-96"></div>
