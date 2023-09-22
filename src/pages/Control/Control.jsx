@@ -7,6 +7,7 @@ import Leonardo from "../../assets/image/leonardo.png";
 import Mega from "../../assets/image/mega.png";
 import Nano from "../../assets/image/nano.png";
 import { ConnectLight, DetectingLight } from "../../components/Unitlight";
+import './Control.css'
 function ControlComponent() {
 
   return (
@@ -16,25 +17,25 @@ function ControlComponent() {
       <h1 className="text-2xl font-semibold">Devices</h1>
       <DetectingLight />
       <div className="flex">
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-1/6 ">
+        <div className="bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer">
           <div>
             <p>Uno</p>
           </div>
           <img src={Uno} alt="uno" />
         </div>
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-1/6 ">
+        <div className="bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer">
           <div>
             <p>Leonardo</p>
           </div>
           <img src={Leonardo} alt="leonardo" />
         </div>
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-1/6 ">
+        <div className="bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer">
           <div>
             <p>Nano</p>
           </div>
           <img src={Nano} alt="nano" />
         </div>
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-1/6 ">
+        <div className="bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer">
           <div>
             <p>Mega</p>
           </div>
