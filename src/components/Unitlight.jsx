@@ -1,3 +1,4 @@
+import './light.css'
 export function ConnectLight(){
     return(
       <div className="flex text-green-500">
@@ -30,6 +31,18 @@ export function PendingLight(){
       </div>
       <div>
         <p className='inline-block align-middle'>Pending</p>
+      </div>
+  </div>
+  )
+}
+export function DetectingLight(){
+  return(
+    <div className="flex text-orange-500 detecting-text">
+      <div>
+        <div className=' bg-orange-400 rounded-full w-2 h-2 inline-block align-middle mx-2'></div>
+      </div>
+      <div>
+        <p className='inline-block align-middle'>Detecting...</p>
       </div>
   </div>
   )
