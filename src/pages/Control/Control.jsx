@@ -7,11 +7,11 @@ import Leonardo from "../../assets/image/leonardo.png";
 import Mega from "../../assets/image/mega.png";
 import Nano from "../../assets/image/nano.png";
 import { ConnectLight } from "../../components/Unitlight";
-import { socket } from "../../socket";
+// import { socket } from "../../socket";
 function ControlComponent() {
-  socket.on("connection", () => {
-    console.log("connect?");
-  });
+  // socket.on("connection", () => {
+  //   console.log("connect?");
+  // });
   return (
     //TODO alert"doesn't detect any arduino devices"
     <div className="py-5 px-10 bg-slate-200 min-h-screen">
