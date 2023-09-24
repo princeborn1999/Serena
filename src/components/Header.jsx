@@ -6,14 +6,14 @@ function HeaderComponent() {
   const [modalState, setModalState] = useState(false);
   const customStyles = {
     overlay: {
-      backgroundColor: 'rgba(44, 76, 96, 0.75)',
+      backgroundColor: "rgba(44, 76, 96, 0.75)",
     },
     content: {
       width: "40%",
       maxHeight: "60vh",
       margin: "auto",
-      padding: '0',
-      border: 'none'
+      padding: "0",
+      border: "none",
     },
   };
   const openModal = () => {
@@ -26,16 +26,18 @@ function HeaderComponent() {
 
   return (
     <div className="relative">
-      <div className="fixed sticky top-0 left-0 right-0 p-2 shadow-sm 
-                      bg-gradient-to-r from-arduinoReact to-blue-400">
+      <div
+        className="fixed sticky top-0 left-0 right-0 p-2 shadow-sm 
+                      bg-gradient-to-r from-arduinoReact to-blue-400"
+      >
         <header className="flex">
           <div className="flex pl-5 ">
             <h1
               className="text-white font-bold text-3xl 
-                           drop-shadow-2xl shadow-white-400/50
+                           shadow-white-400/50
                            pl-16"
             >
-              REDUINO
+              REDUINO Concept.
             </h1>
           </div>
           <div className="flex w-full justify-end pr-5">

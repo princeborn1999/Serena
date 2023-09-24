@@ -1,7 +1,7 @@
 import Contributors from "./Contributors";
-import Reduino from "../../src/assets/image/reduino.jpg"
-import Zombie1 from "../../src/assets/image/zombie_01.jpg"
-import Zombie2 from "../../src/assets/image/zombie_02.jpg"
+import Reduino from "../../src/assets/image/reduino.jpg";
+import Zombie1 from "../../src/assets/image/zombie_01.jpg";
+import Zombie2 from "../../src/assets/image/zombie_02.jpg";
 function IntroComponent() {
   return (
     <div className="flex justify-center">
@@ -30,14 +30,15 @@ function IntroComponent() {
         <section id="use">
           <h1 className="font-bold text-lg">How to use it?</h1>
           <div className="bg-codeBg p-5 w-96 rounded-lg">
-            <code className="text-white">npm install zono</code>
+            <code className="text-white">npm install reduino</code>
           </div>
           <br />
+          <p>Don't use wrong way before check johnny-five support.</p>
           <div className="border p-3 w-2/3">
             <code>
               <p>import {"{ useIRrecv }"} from 'zono'</p>
               <p>const irRecv = useIRrecv('protocol',sendData)</p>
-              <p>ir.send() //send the sendData</p>
+              <p>ir.send() //send the sendData❌</p>
             </code>
           </div>
           <br />
@@ -45,7 +46,7 @@ function IntroComponent() {
             <code>
               <p>import {"{ useIRtrans }"} from 'zono'</p>
               <p>const irTrans = useIRtrans('protocol',sendData)</p>
-              <p>ir.send() //send the sendData</p>
+              <p>ir.send() //send the sendData✅</p>
             </code>
           </div>
           <br />
@@ -71,7 +72,10 @@ function IntroComponent() {
             <div className="w-1/2 flex justify-center">
               <img src={Zombie2} alt="zombie2" />
             </div>
-            <span className="text-gray-500">gamescene src:https://store.steampowered.com/app/676840/Contagion_VR_Outbreak/</span>
+            <span className="text-gray-500">
+              gamescene
+              src:https://store.steampowered.com/app/676840/Contagion_VR_Outbreak/
+            </span>
           </div>
         </section>
 

@@ -7,12 +7,13 @@ import Leonardo from "../../assets/image/leonardo.png";
 import Mega from "../../assets/image/mega.png";
 import Nano from "../../assets/image/nano.png";
 import { ConnectLight, DetectingLight } from "../../components/Unitlight";
-import './Control.css'
+import "./Control.css";
 function ControlComponent() {
-
   return (
     // hover:scale-105
     //TODO alert"doesn't detect any arduino devices"
+    // https://johnny-five.io/api/led/
+    // https://johnny-five.io/api/servo/
     <div className="py-5 px-10 bg-slate-200 min-h-screen">
       <h1 className="text-2xl font-semibold">Devices</h1>
       <DetectingLight />
@@ -44,12 +45,12 @@ function ControlComponent() {
       </div>
       <h1 className="text-2xl font-semibold">Modules</h1>
       <div className="flex">
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
+        {/* <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
           <IRreceiverControl />
         </div>
         <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
           <IRtransmitterControl />
-        </div>
+        </div> */}
         {/* <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
           <MG996RControl />
         </div> */}
