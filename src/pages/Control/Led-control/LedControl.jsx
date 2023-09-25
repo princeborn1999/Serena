@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { ConnectLight, DisconnectLight, PendingLight } from '../../../components/Unitlight';
 import IRrecvImage from '../../../assets/image/IRreceiver.jpg'
-function IRreceiverControl(){
+function LedControl(){
     return(
             <div className='m-5'>
-                <h1 className='font-semibold text-xl'>IR Receiver module</h1>
+                <h1 className='font-semibold text-xl'>Led module</h1>
                 <ConnectLight />
                 <div className='w-48'>
                     <img src={IRrecvImage} alt="IRreceiver" />
@@ -29,4 +29,4 @@ function IRreceiverControl(){
             </div>
     )
 }
-export default IRreceiverControl
+export default LedControl

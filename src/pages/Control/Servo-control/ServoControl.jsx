@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { ConnectLight, DisconnectLight, PendingLight } from '../../../components/Unitlight';
 import IRtranImage from '../../../assets/image/IRtransmitter.jpg'
 
-function IRtransmitterontrol(){
+function ServoControl(){
     return(
             <div className='m-5'>
-                <h1 className='font-semibold text-xl'>IR Transmitter module</h1>
+                <h1 className='font-semibold text-xl'>Servo module</h1>
                 <ConnectLight />
                 <div className='w-48'>
                     <img src={IRtranImage} alt="IRreceiver" />
@@ -21,4 +21,4 @@ function IRtransmitterontrol(){
             </div>
     )
 }
-export default IRtransmitterontrol
+export default ServoControl

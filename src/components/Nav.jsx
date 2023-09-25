@@ -6,6 +6,7 @@ import { FcElectronics } from "react-icons/fc";
 import { FcPuzzle } from "react-icons/fc";
 import { FcReading } from "react-icons/fc";
 import { FcIdea } from "react-icons/fc";
+import { BsGithub } from "react-icons/bs";
 function NavComponent() {
   const [active, setActive] = useState("intro");
   let btnClass = "bg-gray-800 rounded text-white font-semibold";
@@ -26,7 +27,9 @@ function NavComponent() {
           className={`${setClass("intro")} p-2 flex`}
           onClick={() => changeActive("intro")}
         >
-          <FcCommandLine />
+          <div className="p-1">
+            <FcCommandLine />
+          </div>
           <p> Introduction</p>
         </div>
       </Link>
@@ -35,7 +38,9 @@ function NavComponent() {
           className={`${setClass("control")} p-2 flex`}
           onClick={() => changeActive("control")}
         >
-          <FcElectronics />
+          <div className="p-1">
+            <FcElectronics />
+          </div>
           <p> Controller</p>
         </div>
       </Link>
@@ -44,7 +49,9 @@ function NavComponent() {
           className={`${setClass("temp")} p-2 flex`}
           onClick={() => changeActive("temp")}
         >
-          <FcPuzzle />
+          <div className="p-1">
+            <FcPuzzle />
+          </div>
           <p> Application(R3F)</p>
         </div>
       </Link>
@@ -53,7 +60,9 @@ function NavComponent() {
           className={`${setClass("question")} p-2 flex`}
           onClick={() => changeActive("question")}
         >
-          <FcIdea />
+          <div className="p-1">
+            <FcIdea />
+          </div>
           <p> Q&A</p>
         </div>
       </Link>
@@ -62,13 +71,20 @@ function NavComponent() {
           className={`${setClass("articles")} p-2 flex`}
           onClick={() => changeActive("articles")}
         >
-          <FcReading />
+          <div className="p-1">
+            <FcReading />
+          </div>
           <p> Articles</p>
         </div>
       </Link>
-      {/* <div className='text-gray-400 p-2' onClick={() => changeActive('api')}>
-                {'Api(Uncompleted)'}
-            </div> */}
+      <div
+        className={`p-2 flex`}
+      >
+        <div className="p-1">
+          <BsGithub />
+        </div>
+        <a href="https://github.com/princeborn1999/reduino" target="_blank">Github</a>
+      </div>
     </div>
   );
 }
