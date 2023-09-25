@@ -12,8 +12,6 @@ function ControlComponent() {
 
   }
   return (
-
-
     // hover:scale-105
     //TODO alert"doesn't detect any arduino devices"
     // https://johnny-five.io/api/led/
