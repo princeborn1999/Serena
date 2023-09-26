@@ -44,7 +44,7 @@ function NavComponent() {
           <p> Controller</p>
         </div>
       </Link>
-      <Link to="/application">
+      {/* <Link to="/application">
         <div
           className={`${setClass("temp")} p-2 flex`}
           onClick={() => changeActive("temp")}
@@ -54,7 +54,7 @@ function NavComponent() {
           </div>
           <p> Application(R3F)</p>
         </div>
-      </Link>
+      </Link> */}
       <Link to="/question">
         <div
           className={`${setClass("question")} p-2 flex`}
