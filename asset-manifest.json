@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/reduino/static/css/main.f1c74be8.css",
+    "main.js": "/reduino/static/js/main.1699f4ce.js",
+    "static/js/787.7c410a17.chunk.js": "/reduino/static/js/787.7c410a17.chunk.js",
+    "static/media/mega.png": "/reduino/static/media/mega.730bb4d2ae95747607a6.png",
+    "static/media/leonardo.png": "/reduino/static/media/leonardo.75166f7c6a2366bc9060.png",
+    "static/media/uno.png": "/reduino/static/media/uno.ec63a17cbe672a880d59.png",
+    "static/media/IRreceiver.jpg": "/reduino/static/media/IRreceiver.0e9542c7f8a1ed976864.jpg",
+    "static/media/nano.png": "/reduino/static/media/nano.85d08ff55bd909730207.png",
+    "static/media/IRtransmitter.jpg": "/reduino/static/media/IRtransmitter.ebc8f3857539d5276365.jpg",
+    "static/media/zombie_01.jpg": "/reduino/static/media/zombie_01.29b7b75e8f2d4cccda0a.jpg",
+    "static/media/reduino.jpg": "/reduino/static/media/reduino.5c75cf2f8b510622008b.jpg",
+    "static/media/zombie_02.jpg": "/reduino/static/media/zombie_02.e7630fb54e49b01871b0.jpg",
+    "index.html": "/reduino/index.html",
+    "main.f1c74be8.css.map": "/reduino/static/css/main.f1c74be8.css.map",
+    "main.1699f4ce.js.map": "/reduino/static/js/main.1699f4ce.js.map",
+    "787.7c410a17.chunk.js.map": "/reduino/static/js/787.7c410a17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1c74be8.css",
+    "static/js/main.1699f4ce.js"
+  ]
+}
