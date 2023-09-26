@@ -7,7 +7,7 @@ function IntroComponent() {
     <div className="flex justify-center">
       <div className="px-40 py-10 w-4/5">
         <section id="intro">
-          <div className="w-1/2 flex justify-center">
+          <div className="h-48 pl-12 flex justify-center">
             <img src={Reduino} alt="reduinoBanner" />
           </div>
           <h1 className="font-bold text-lg">Introduction</h1>
