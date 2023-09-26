@@ -5,6 +5,7 @@ import ControlComponent from './pages/Control/Control';
 import FooterComponent from './components/Footer';
 import IntroComponent from './pages/Intro';
 import ApplicationComponent from './pages/Application';
+import QuestionComponent from './pages/Question';
 import ArticlesComponent from './pages/Articles';
 import { Route } from "react-router-dom";
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <div className='w-screen min-h-screen'>
           <Route exact path="/"><IntroComponent /></Route>
           <Route path="/control"><ControlComponent /></Route>
-          <Route path="/application"><ApplicationComponent /></Route>
+          {/* <Route path="/application"><ApplicationComponent /></Route> */}
+          <Route path="/question"><QuestionComponent /></Route>
           <Route path="/articles"><ArticlesComponent /></Route>
         </div>
       </div>

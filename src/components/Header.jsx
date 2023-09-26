@@ -28,7 +28,7 @@ function HeaderComponent() {
     <div className="relative">
       <div
         className="fixed sticky top-0 left-0 right-0 p-2 shadow-sm 
-                      bg-gradient-to-r from-arduinoReact to-blue-400"
+                      bg-gradient-to-r from-arduinoReact via-purple-400 to-blue-400"
       >
         <header className="flex">
           <div className="flex pl-5 ">

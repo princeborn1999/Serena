@@ -30,12 +30,6 @@ function ArticlesComponent() {
               <span className="text-gray-600">{link.description}</span>
             </div>
           ))}
-          {/* <div className="p-2">
-            <a href="https://www.arduino.cc/en/Tutorial/HomePage">Arduino tutorial</a>
-          </div>
-          <a href="https://nodejs.dev/en/learn/">Node.js tutorial</a>
-          <a href="https://johnny-five.io/">Johnny-five tutorial</a>
-          <a href="https://legacy.reactjs.org/tutorial/tutorial.html">React tutorial</a> */}
         </div>
       </div>
     </div>

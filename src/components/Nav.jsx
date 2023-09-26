@@ -63,7 +63,7 @@ function NavComponent() {
           <div className="p-1">
             <FcIdea />
           </div>
-          <p> Q&A</p>
+          <p> Question</p>
         </div>
       </Link>
       <Link to="/articles">
@@ -74,7 +74,7 @@ function NavComponent() {
           <div className="p-1">
             <FcReading />
           </div>
-          <p> Articles</p>
+          <p> Article</p>
         </div>
       </Link>
       <div
