@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { ConnectLight, DisconnectLight, PendingLight } from '../../../components/Unitlight';
 import ServoImage from '../../../assets/image/Servo.jpg';
 function ServoControl(){
+    const [breakTime, setBreakTime] = useState('');
+    const [timeKeeping, setTimeKeeping] = useState('');
+    const [angle, setAngle] = useState('180');
     const sendServo = () =>{
-
+        
     }
     const stopServo = () =>{
 
@@ -22,14 +25,25 @@ function ServoControl(){
                 <div className='min-w-64 min-h-32 p-2 m-2 bg-gray-200 rounded-lg'>
                     <h3>Parameters</h3>
                     <div className='flex p-2'>
-                        <p className='pr-2'>Break time</p><input className='rounded border-2 border-sky-500' type="text" />
+                        <p className='pr-2'>Break time</p>
+                        <input className='rounded border-2 border-sky-500' 
+                        value={breakTime}
+                        onChange={(e) => setBreakTime(e.target.value)}
+                        type="text" />
                     </div>
                     <div className='flex p-2'>
-                        <p className='pr-2'>Timekeeping</p><input className='rounded border-2 border-sky-500' type="text" />
+                        <p className='pr-2'>Timekeeping</p>
+                        <input className='rounded border-2 border-sky-500'
+                        value={timeKeeping}
+                        onChange={(e) => setTimeKeeping(e.target.value)}
+                         type="text" />
                     </div>
                     <div className='flex p-2'>
                         <p className='pr-2'>Angle</p>
-                        <select className='rounded border-2 border-sky-500' name="angle">
+                        <select className='rounded border-2 border-sky-500' name="angle"
+                        value={angle}
+                        onChange={(e) => setAngle(e.target.value)}
+                        >
                             <option value="180">180°</option>
                             <option value="90">90°</option>
                         </select>
