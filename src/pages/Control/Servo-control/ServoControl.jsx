@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { ConnectLight, DisconnectLight, PendingLight } from '../../../components/Unitlight';
 import ServoImage from '../../../assets/image/Servo.jpg';
 function ServoControl(){
+    const sendServo = () =>{
+
+    }
+    const stopServo = () =>{
+
+    }
     return(
             <div className='m-5'>
                 <h1 className='font-semibold text-xl'>Servo module</h1>
@@ -30,8 +36,10 @@ function ServoControl(){
                     </div>
                 </div>
                 <div className='pl-5 flex'>
-                    <button className='py-2 px-5 text-white text-lg bg-green-500 focus:bg-green-700 rounded-lg'>Send</button>
-                    <button className='ml-5 py-2 px-5 text-white text-lg bg-red-500 focus:bg-red-700 rounded-lg'>Stop</button>
+                    <button className='py-2 px-5 text-white text-lg bg-green-500 focus:bg-green-700 rounded-lg'
+                            onClick={()=>sendServo()}>Send</button>
+                    <button className='ml-5 py-2 px-5 text-white text-lg bg-red-500 focus:bg-red-700 rounded-lg'
+                            onClick={()=>stopServo()}>Stop</button>
                 </div>
             </div>
     )

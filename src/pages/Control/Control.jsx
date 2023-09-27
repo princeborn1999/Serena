@@ -17,8 +17,8 @@ function ControlComponent() {
     setSelectBoard(boardname)
     setSelected(true)
   }
-  const selectClass = 'bg-white opacity-100 bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer'
-  const unSelectClass ='hover:bg-white bg-gray-300 hover:opacity-100 opacity-80 bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer'
+  const selectClass = 'shadow-lg bg-white opacity-100 bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer'
+  const unSelectClass ='shadow-lg hover:bg-white bg-gray-300 hover:opacity-100 opacity-80 bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer'
   useEffect(()=>{
     // if socket回傳給我 connected params: 該板子)
     setSocketBoard('uno')
@@ -86,10 +86,10 @@ function ControlComponent() {
       </div>
       <h1 className="text-2xl font-semibold">Modules</h1>
       <div className={enableModule?'flex opacity-100':'flex opacity-20'}>
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
+        <div className="bg-white rounded shadow-lg p-2 m-2 w-2/6">
           <LedControl />
         </div>
-        <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
+        <div className="bg-white rounded shadow-lg p-2 m-2 w-2/6">
           <ServoControl />
         </div>
       </div>

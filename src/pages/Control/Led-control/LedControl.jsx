@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { ConnectLight, DisconnectLight, PendingLight } from '../../../components/Unitlight';
 import LedImage from '../../../assets/image/Led.jpg';
 function LedControl(){
+    const sendLed = () => { 
+        //TODO: 紀錄value , socket io傳data
+    }
+    const stopLed = () => {
+        //TODO: 紀錄value , socket io傳data
+    }
     return(
             <div className='m-5'>
                 <h1 className='font-semibold text-xl'>Led module</h1>
@@ -22,10 +28,11 @@ function LedControl(){
                     </div>
                 </div>
                 <div className='pl-5 flex'>
-                    <button className='py-2 px-5 text-white text-lg bg-green-500 focus:bg-green-700 rounded-lg'>Send</button>
-                    <button className='ml-5 py-2 px-5 text-white text-lg bg-red-500 focus:bg-red-700 rounded-lg'>Stop</button>
+                    <button className='py-2 px-5 text-white text-lg bg-green-500 focus:bg-green-700 rounded-lg' 
+                            onClick = {()=>sendLed() }>Send</button>
+                    <button className='ml-5 py-2 px-5 text-white text-lg bg-red-500 focus:bg-red-700 rounded-lg'
+                            onClick={()=>stopLed()}>Stop</button>
                 </div>
-                {/* reconnection  */}
             </div>
     )
 }
