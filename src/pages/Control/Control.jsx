@@ -29,10 +29,6 @@ function ControlComponent() {
     setSelected(false)
   })
   return (
-    // hover:scale-105
-    //TODO alert"doesn't detect any arduino devices"
-    // https://johnny-five.io/api/led/
-    // https://johnny-five.io/api/servo/
     <div className="py-5 px-10 bg-slate-200 min-h-screen">
       <h1 className="text-2xl font-semibold">Devices</h1>
       {!selected && <DetectingLight />}
@@ -96,6 +92,10 @@ function ControlComponent() {
         <div className="bg-white rounded shadow-sm p-2 m-2 w-2/6">
           <ServoControl />
         </div>
+      </div>
+      <h1 className="text-2xl font-semibold">Diagram Graph</h1>
+      <div>
+
       </div>
     </div>
   );
