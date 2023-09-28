@@ -6,7 +6,7 @@ function ServoControl(){
     const [timeKeeping, setTimeKeeping] = useState('');
     const [angle, setAngle] = useState('180');
     const sendServo = () =>{
-        
+
     }
     const stopServo = () =>{
 
@@ -50,9 +50,9 @@ function ServoControl(){
                     </div>
                 </div>
                 <div className='pl-5 flex'>
-                    <button className='py-2 px-5 text-white text-lg bg-green-500 focus:bg-green-700 rounded-lg'
+                    <button className='py-2 px-5 text-white text-lg bg-green-500 transition duration-300 active:bg-green-700 rounded-lg focus:outline-none'
                             onClick={()=>sendServo()}>Send</button>
-                    <button className='ml-5 py-2 px-5 text-white text-lg bg-red-500 focus:bg-red-700 rounded-lg'
+                    <button className='ml-5 py-2 px-5 text-white text-lg bg-red-500 transition duration-300 active:bg-red-700 rounded-lg focus:outline-none'
                             onClick={()=>stopServo()}>Stop</button>
                 </div>
             </div>

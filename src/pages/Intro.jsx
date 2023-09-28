@@ -8,7 +8,7 @@ function IntroComponent() {
       <div className="px-40 py-10 w-4/5">
         <section id="intro">
           <div className="h-48 pl-12 flex justify-center">
-            <img src={Reduino} alt="reduinoBanner" />
+            <img src={Reduino} alt="reduinoBanner"/>
           </div>
           <h1 className="font-bold text-lg">Introduction</h1>
           <div className="p-2">
@@ -51,7 +51,9 @@ function IntroComponent() {
           </div>
           <br />
         </section>
-
+        <section id="works">
+          <h1 className="font-bold text-lg">How it works?</h1>
+        </section>
         <section id="application">
           <h1 className="font-bold text-lg">Application(Iot & WebVR)</h1>
           <div className="p-2">

@@ -35,9 +35,9 @@ function HeaderComponent() {
             <h1
               className="text-white font-bold text-3xl 
                            shadow-white-400/50
-                           pl-16"
+                           pl-16 animate-bounce"
             >
-              REDUINO Concept.
+              REDUINO
             </h1>
           </div>
           <div className="flex w-full justify-end pr-5">

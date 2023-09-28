@@ -116,6 +116,7 @@ function ControlComponent() {
         </div>
       </div>
       <h1 className="text-2xl font-semibold">Diagram Graph</h1>
+
       <div>
 
       </div>
