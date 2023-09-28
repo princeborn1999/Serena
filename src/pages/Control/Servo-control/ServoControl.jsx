@@ -14,7 +14,6 @@ function ServoControl(){
     return(
             <div className='m-5'>
                 <h1 className='font-semibold text-xl'>Servo module</h1>
-                <ConnectLight />
                 <div className='w-56 m-1'>
                     <img src={ServoImage} alt="IRreceiver" />
                 </div>

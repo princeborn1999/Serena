@@ -18,7 +18,6 @@ function LedControl(){
     return(
             <div className='m-5'>
                 <h1 className='font-semibold text-xl'>Led module</h1>
-                <ConnectLight />
                 <div className='w-48 m-1'>
                     <img src={LedImage} alt="IRreceiver" />
                 </div>

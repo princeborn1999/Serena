@@ -28,7 +28,7 @@ function ControlComponent() {
   useEffect(()=>{
     socket.on("connect_success",(data)=>{
       console.log(`Board ${data.boardname} connect sucessfully!`)
-      setSelectBoard('')
+      setSelectBoard(data.boardname)
       setConnectBoard(data.boardname)
       setDisconnectBoard('')
       setEnableModule(true)
@@ -54,8 +54,8 @@ function ControlComponent() {
         <div className={selectBoard === 'uno' ? selectClass : unSelectClass}
                         onClick={() => clickToSelectBoard('uno')}>
           {
-           selectBoard === 'uno' && <PendingLight /> ||
            connectBoard === 'uno' && <ConnectLight /> ||
+           selectBoard === 'uno' && <PendingLight /> ||
            disconnectBoard === 'uno' && <DisconnectLight />
           }
           <div>
@@ -66,8 +66,8 @@ function ControlComponent() {
         <div className={selectBoard === 'leonardo' ? selectClass : unSelectClass}
                         onClick={() => clickToSelectBoard('leonardo')}>
           {
-           selectBoard === 'leonardo' && <PendingLight /> ||
            connectBoard === 'leonardo' && <ConnectLight /> ||
+           selectBoard === 'leonardo' && <PendingLight /> ||
            disconnectBoard === 'leonardo' && <DisconnectLight />
           }
           <div>
@@ -78,8 +78,8 @@ function ControlComponent() {
         <div className={selectBoard === 'nano' ? selectClass : unSelectClass}
                         onClick={() => clickToSelectBoard('nano')}>
           {
-           selectBoard === 'nano' && <PendingLight /> ||
            connectBoard === 'nano' && <ConnectLight />||
+           selectBoard === 'nano' && <PendingLight /> ||
            disconnectBoard === 'nano' && <DisconnectLight />
           }
           <div>
@@ -90,8 +90,8 @@ function ControlComponent() {
         <div className={selectBoard === 'mega' ? selectClass : unSelectClass}
                         onClick={() => clickToSelectBoard('mega')}>
           {
-           selectBoard === 'mega' && <PendingLight /> ||
            connectBoard === 'mega' && <ConnectLight />||
+           selectBoard === 'mega' && <PendingLight /> ||
            disconnectBoard === 'mega' && <DisconnectLight />
           }
           <div>
