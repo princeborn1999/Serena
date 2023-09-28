@@ -11,11 +11,9 @@ function LedControl(){
             breakTime: breakTime,
             timeKeeping: timeKeeping
         }
-        socket.emit('sendLed',data)
     }
     const stopLed = () => {
         //TODO: 紀錄value , socket io傳data
-        socket.emit('stopLed')
     }
     return(
             <div className='m-5'>

@@ -5,29 +5,41 @@ import Uno from "../../assets/image/uno.png";
 import Leonardo from "../../assets/image/leonardo.png";
 import Mega from "../../assets/image/mega.png";
 import Nano from "../../assets/image/nano.png";
-import { ConnectLight, DetectingLight, PendingLight } from "../../components/Unitlight";
+import { ConnectLight, DetectingLight, PendingLight, DisconnectLight } from "../../components/Unitlight";
 import "./Control.css";
 import { FcAdvance } from "react-icons/fc";
+import { socket } from '../../socket';
+
 function ControlComponent() {
   const [selected,setSelected] = useState(false)
   const [selectBoard , setSelectBoard ] = useState('')
-  const [socketBoard , setSocketBoard ] = useState('')
+  const [connectBoard , setConnectBoard ] = useState('')
+  const [disconnectBoard, setDisconnectBoard] = useState('')
   const [enableModule, setEnableModule] = useState(false)
+
   const clickToSelectBoard = (boardname) => {
+    socket.emit('selectBoard',{boardname: boardname})
     setSelectBoard(boardname)
     setSelected(true)
   }
+
   const selectClass = 'shadow-lg bg-white opacity-100 bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer'
   const unSelectClass ='shadow-lg hover:bg-white bg-gray-300 hover:opacity-100 opacity-80 bg-white rounded shadow-sm p-2 m-2 w-1/6 hover-pointer'
   useEffect(()=>{
-    // if socket回傳給我 connected params: 該板子)
-    setSocketBoard('uno')
-    setEnableModule(true)
-    // if disconnect
-    setSelectBoard('')
-    setSocketBoard('')
-    setSelected(false)
-  })
+    socket.on("connect_success",(data)=>{
+      console.log(`Board ${data.boardname} connect sucessfully!`)
+      setSelectBoard('')
+      setConnectBoard(data.boardname)
+      setDisconnectBoard('')
+      setEnableModule(true)
+    })
+    socket.on("connect_fail",(data)=>{
+      console.log(`Do not detect ${data.boardname}, please check boardtype`)
+      setSelectBoard('')
+      setConnectBoard('')
+      setDisconnectBoard(data.boardname)
+    })
+  },socket)
   return (
     <div className="py-5 px-10 bg-slate-200 min-h-screen">
       <h1 className="text-2xl font-semibold">Devices</h1>
@@ -43,7 +55,8 @@ function ControlComponent() {
                         onClick={() => clickToSelectBoard('uno')}>
           {
            selectBoard === 'uno' && <PendingLight /> ||
-           socketBoard === 'uno' && <ConnectLight />
+           connectBoard === 'uno' && <ConnectLight /> ||
+           disconnectBoard === 'uno' && <DisconnectLight />
           }
           <div>
             <p>Uno</p>
@@ -54,7 +67,8 @@ function ControlComponent() {
                         onClick={() => clickToSelectBoard('leonardo')}>
           {
            selectBoard === 'leonardo' && <PendingLight /> ||
-           socketBoard === 'leonardo' && <ConnectLight />
+           connectBoard === 'leonardo' && <ConnectLight /> ||
+           disconnectBoard === 'leonardo' && <DisconnectLight />
           }
           <div>
             <p>Leonardo</p>
@@ -65,7 +79,8 @@ function ControlComponent() {
                         onClick={() => clickToSelectBoard('nano')}>
           {
            selectBoard === 'nano' && <PendingLight /> ||
-           socketBoard === 'nano' && <ConnectLight />
+           connectBoard === 'nano' && <ConnectLight />||
+           disconnectBoard === 'nano' && <DisconnectLight />
           }
           <div>
             <p>Nano</p>
@@ -76,7 +91,8 @@ function ControlComponent() {
                         onClick={() => clickToSelectBoard('mega')}>
           {
            selectBoard === 'mega' && <PendingLight /> ||
-           socketBoard === 'mega' && <ConnectLight />
+           connectBoard === 'mega' && <ConnectLight />||
+           disconnectBoard === 'mega' && <DisconnectLight />
           }
           <div>
             <p>Mega</p>
@@ -85,6 +101,12 @@ function ControlComponent() {
         </div>
       </div>
       <h1 className="text-2xl font-semibold">Modules</h1>
+      <div className='flex text-lg'>
+        <div className='p-1'>
+          <FcAdvance />
+        </div>
+        <p>Please ensure the device is connected correctly</p>
+      </div>
       <div className={enableModule?'flex opacity-100':'flex opacity-20'}>
         <div className="bg-white rounded shadow-lg p-2 m-2 w-2/6">
           <LedControl />
