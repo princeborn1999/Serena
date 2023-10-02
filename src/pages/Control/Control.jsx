@@ -9,6 +9,7 @@ import { ConnectLight, DetectingLight, PendingLight, DisconnectLight } from "../
 import "./Control.css";
 import { FcAdvance } from "react-icons/fc";
 import { socket } from '../../socket';
+import ControlBoard from '../../components/ControlBoard';
 
 function ControlComponent() {
   const [selected,setSelected] = useState(false)
@@ -115,10 +116,17 @@ function ControlComponent() {
           <ServoControl />
         </div>
       </div>
-      <h1 className="text-2xl font-semibold">Diagram Graph</h1>
-
-      <div>
-
+      <h1 className="text-2xl font-semibold">Status</h1>
+      <div className='flex text-lg'>
+        <div className='p-1'>
+          <FcAdvance />
+        </div>
+        <p>Review the Result</p>
+      </div>
+      <div className={enableModule?'flex opacity-100':'flex opacity-20'}>
+        <div className="bg-white rounded shadow-lg p-2 m-2 w-2/6">
+          <ControlBoard />
+        </div>
       </div>
     </div>
   );

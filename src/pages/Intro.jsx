@@ -51,9 +51,6 @@ function IntroComponent() {
           </div>
           <br />
         </section>
-        <section id="works">
-          <h1 className="font-bold text-lg">How it works?</h1>
-        </section>
         <section id="application">
           <h1 className="font-bold text-lg">Future Expectations(Iot & WebVR)</h1>
           <div className="p-2">
