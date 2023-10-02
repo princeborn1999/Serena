@@ -55,7 +55,7 @@ function IntroComponent() {
           <h1 className="font-bold text-lg">How it works?</h1>
         </section>
         <section id="application">
-          <h1 className="font-bold text-lg">Application(Iot & WebVR)</h1>
+          <h1 className="font-bold text-lg">Future Expectations(Iot & WebVR)</h1>
           <div className="p-2">
             <p>
               Enhancing the realism of video games like 'Zombie' 'Racing' or
@@ -68,10 +68,10 @@ function IntroComponent() {
               there's an opportunity to enhance it further by engaging more
               senses and environmental cues.
             </p>
-            <div className="w-1/2 flex justify-center">
+            <div className="w-1/2 p-1 flex justify-center">
               <img src={Zombie1} alt="zombie1" />
             </div>
-            <div className="w-1/2 flex justify-center">
+            <div className="w-1/2 p-1 flex justify-center">
               <img src={Zombie2} alt="zombie2" />
             </div>
             <span className="text-gray-500">
