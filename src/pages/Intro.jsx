@@ -8,7 +8,7 @@ function IntroComponent() {
       <div className="px-40 py-10 w-4/5">
         <section id="intro">
           <div className="h-48 pl-12 flex justify-center">
-            <img src={Reduino} alt="reduinoBanner"/>
+            <img src={Reduino} alt="reduinoBanner" />
           </div>
           <h1 className="font-bold text-lg">Introduction</h1>
           <div className="p-2">
@@ -27,7 +27,7 @@ function IntroComponent() {
           </div> */}
         </section>
 
-        <section id="use">
+        {/* <section id="use">
           <h1 className="font-bold text-lg">How to use it?</h1>
           <div className="bg-codeBg p-5 w-96 rounded-lg">
             <code className="text-white">npm install reduino</code>
@@ -50,9 +50,11 @@ function IntroComponent() {
             </code>
           </div>
           <br />
-        </section>
+        </section> */}
         <section id="application">
-          <h1 className="font-bold text-lg">Future Expectations(Iot & WebVR)</h1>
+          <h1 className="font-bold text-lg">
+            Future Expectations(Iot & WebVR)
+          </h1>
           <div className="p-2">
             <p>
               Enhancing the realism of video games like 'Zombie' 'Racing' or
