@@ -91,11 +91,11 @@ function IntroComponent() {
           <div className="p-2">
             <a href="#intro">Introduction</a>
           </div>
-          <div className="p-2">
+          {/* <div className="p-2">
             <a href="#use">How to use it?</a>
-          </div>
+          </div> */}
           <div className="p-2">
-            <a href="#application">Application</a>
+            <a href="#application">Future Expectations</a>
           </div>
           <div className="p-2">
             <a href="#contributor">Contributors</a>
