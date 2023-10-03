@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reduino/static/css/main.21186686.css",
-    "main.js": "/reduino/static/js/main.55c1b7b7.js",
+    "main.js": "/reduino/static/js/main.60aa4576.js",
     "static/js/787.7c410a17.chunk.js": "/reduino/static/js/787.7c410a17.chunk.js",
     "static/media/mega.png": "/reduino/static/media/mega.730bb4d2ae95747607a6.png",
     "static/media/leonardo.png": "/reduino/static/media/leonardo.75166f7c6a2366bc9060.png",
@@ -14,11 +14,11 @@
     "static/media/zombie_02.jpg": "/reduino/static/media/zombie_02.e7630fb54e49b01871b0.jpg",
     "index.html": "/reduino/index.html",
     "main.21186686.css.map": "/reduino/static/css/main.21186686.css.map",
-    "main.55c1b7b7.js.map": "/reduino/static/js/main.55c1b7b7.js.map",
+    "main.60aa4576.js.map": "/reduino/static/js/main.60aa4576.js.map",
     "787.7c410a17.chunk.js.map": "/reduino/static/js/787.7c410a17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21186686.css",
-    "static/js/main.55c1b7b7.js"
+    "static/js/main.60aa4576.js"
   ]
 }
